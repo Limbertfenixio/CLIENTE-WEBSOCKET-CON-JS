@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <script src="main.js"></script>
+    <title>WebsocketsApp</title>
+</head>
+<body>
+    <!-- Contenedor Principal -->
+    <div class="comments-container">
+        <h1>WebSockets App</h1>
+        <div class="area-send-comment">
+            <form onsubmit="return addMessages(this)">
+                <textarea id="texto" placeholder="Escribe un mensaje"></textarea>
+                <input type="text" id="username" placeholder="Tu Nombre">
+                <input type="submit" value="Enviar!">
+            </form>
+        </div>
+        <ul id="comments-list" class="comments-list">
+            
+        </ul>
+    </div>
+</body>
+</html>
